@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 
 const Dashboard = () => {
 
@@ -25,7 +25,7 @@ const Dashboard = () => {
     <div>
       <div className='p-8 bg-[#f1f1f17e] w-1/3 m-8 shadow-xl rounded-xl'>
         <div className='border-blue-600 border-2 text-black flex justify-between px-0 rounded-sm overflow-hidden'>
-          <input type="text" placeholder='Enter your url' className='py-3 px-5 outline-0 text-[18px]' value={url} onChange={(e) => { setUrl(e.target.value) }} />
+          <input type="text" placeholder='Paste your long link here' className='py-3 px-5 outline-0 text-[18px]' value={url} onChange={(e) => { setUrl(e.target.value) }} />
           <button className='bg-blue-600 px-4 py-2 text-white cursor-pointer' onClick={handleGenerate}>Generate</button>
         </div>
         <div className='mt-4'>
