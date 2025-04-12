@@ -20,8 +20,8 @@ export const handleGenerateNewShortURL = async (req, res) => {
   });
 
   return res.json({
-    "Original URL": `${url}`,
-    "Short URL": `http://localhost:3000/${shortId}`
+    success: true,
+    shortURL: `http://localhost:3000/${shortId}`
   })
 
 }
